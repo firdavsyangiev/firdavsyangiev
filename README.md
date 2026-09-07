@@ -11,9 +11,9 @@
 
 <!-- snake:start -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/snake-pending.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/snake-pending.svg">
-  <img src="assets/snake-pending.svg" width="100%" alt="Contribution snake — awaiting the first GitHub Actions run">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/firdavsyangiev/firdavsyangiev/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/firdavsyangiev/firdavsyangiev/output/github-snake.svg">
+  <img src="https://raw.githubusercontent.com/firdavsyangiev/firdavsyangiev/output/github-snake.svg" width="100%" alt="Animated contribution snake for firdavsyangiev">
 </picture>
 <!-- snake:end -->
 
