@@ -8,9 +8,9 @@
 
 <!-- snake:start -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/firdavsyangiev/firdavsyangiev/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/firdavsyangiev/firdavsyangiev/output/github-snake.svg">
-  <img src="https://raw.githubusercontent.com/firdavsyangiev/firdavsyangiev/output/github-snake.svg" width="100%" alt="Animated contribution snake for firdavsyangiev">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/firdavsyangiev/firdavsyangiev/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/firdavsyangiev/firdavsyangiev/output/github-contribution-grid-snake.svg">
+  <img src="https://raw.githubusercontent.com/firdavsyangiev/firdavsyangiev/output/github-contribution-grid-snake.svg" width="100%" alt="Animated contribution snake for firdavsyangiev">
 </picture>
 <!-- snake:end -->
 
