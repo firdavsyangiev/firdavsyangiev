@@ -3,12 +3,6 @@
   <img src="assets/header.svg" width="100%" alt="Hey, I'm Ray — Full-Stack Developer. I design and build modern web applications. Passionate about clean code, real-world products, and continuous learning. Code. Build. Improve. Repeat.">
 </picture>
 
-<p>Seoul, South Korea · Originally from Bukhara, Uzbekistan<br><sub>Always learning &nbsp; / &nbsp; Football &nbsp; / &nbsp; Coffee → Code</sub></p>
-
----
-
-<img src="assets/terminal.svg" width="330" alt="ray@github:~$">
-
 <!-- snake:start -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/firdavsyangiev/firdavsyangiev/output/github-snake-dark.svg">
@@ -16,15 +10,6 @@
   <img src="https://raw.githubusercontent.com/firdavsyangiev/firdavsyangiev/output/github-snake.svg" width="100%" alt="Animated contribution snake for firdavsyangiev">
 </picture>
 <!-- snake:end -->
-
-### GitHub activity
-
-<p>
-  <img src="assets/stats.svg" width="440" alt="GitHub statistics — generated from firdavsyangiev's account">
-  <img src="assets/languages.svg" width="440" alt="Top languages by code bytes in public, owned, non-fork repositories">
-</p>
-
-<sub>Refreshed daily. Commits cover the past year under GitHub's contribution rules; languages describe repository code, not proficiency.</sub>
 
 ### Tech stack
 

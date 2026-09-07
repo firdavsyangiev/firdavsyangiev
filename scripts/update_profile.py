@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh local SVG cards and verified project links. Python standard library only."""
-import collections
-import datetime as dt
-import html
+"""Refresh verified project links and contribution snake references. Python standard library only."""
 import json
 import os
 from pathlib import Path
@@ -47,7 +44,6 @@ def api(path, payload=None):
 
 
 def collect():
-    user = api(f'users/{USERNAME}')
     repositories = []
     page = 1
     while True:
@@ -56,51 +52,7 @@ def collect():
         if len(batch) < 100:
             break
         page += 1
-    languages = collections.Counter()
-    for repository in repositories:
-        if not repository['fork']:
-            languages.update(api(f"repos/{USERNAME}/{repository['name']}/languages"))
-    commits = None
-    if os.environ.get('GITHUB_TOKEN'):
-        result = api('graphql', {'query': 'query($login:String!){user(login:$login){contributionsCollection{startedAt endedAt totalCommitContributions}}}', 'variables': {'login': USERNAME}})
-        commits = result['data']['user']['contributionsCollection']['totalCommitContributions']
-    return user, repositories, languages, commits
-
-
-def text(x, y, value, size=15, color='#a1a1aa', extra=''):
-    return f'<text x="{x}" y="{y}" fill="{color}" font-family="Arial,Helvetica,sans-serif" font-size="{size}" {extra}>{html.escape(str(value))}</text>'
-
-
-def card(title, body, description):
-    return '<svg xmlns="http://www.w3.org/2000/svg" width="440" height="265" viewBox="0 0 440 265" role="img"><title>' + html.escape(description) + '</title><rect x=".5" y=".5" width="439" height="264" rx="12" fill="#0b0d0e" stroke="#242729"/>' + text(24, 37, title, 20, '#f4f4f5') + body + '</svg>\n'
-
-
-def render(user, repositories, languages, commits, date):
-    metrics = [
-        ('Commits · past year', f'{commits:,}' if commits is not None else 'Unavailable'),
-        ('Followers', f"{user['followers']:,}"),
-        ('Public repositories', f"{user['public_repos']:,}"),
-        ('Stars · owned non-forks', f"{sum(r['stargazers_count'] for r in repositories if not r['fork']):,}"),
-    ]
-    body = ''
-    for i, (label, value) in enumerate(metrics):
-        y = 79 + i * 39
-        body += text(24, y, label, 14) + text(414, y, value, 21, '#f4f4f5', 'text-anchor="end"')
-    body += text(24, 242, f'GitHub API · {date} UTC', 12)
-    stats = card('GitHub activity', body, '; '.join(f'{k}: {v}' for k, v in metrics) + f'. Updated {date} UTC.')
-    total = sum(languages.values())
-    body = ''
-    top = languages.most_common(5)
-    for i, (name, count) in enumerate(top):
-        y = 71 + i * 32
-        percentage = count / total * 100
-        body += text(24, y, name, 14, '#d4d4d8') + text(414, y, f'{percentage:.1f}%', 13, extra='text-anchor="end"')
-        body += f'<rect x="24" y="{y+8}" width="390" height="3" rx="1.5" fill="#272b2e"/><rect x="24" y="{y+8}" width="{390*count/total:.2f}" height="3" rx="1.5" fill="#a1a1aa"/>'
-    if not top:
-        body += text(24, 113, 'No public language data available.', 16)
-    body += text(24, 242, f'Owned non-forks · code bytes · {date}', 12)
-    lang = card('Top languages', body, 'Top languages by code bytes in public owned non-forks. ' + ', '.join(f'{n}: {c/total:.1%}' for n, c in top))
-    return stats, lang
+    return repositories
 
 
 def replace_block(content, name, body):
@@ -125,9 +77,7 @@ def project_block(repositories):
 
 
 def main():
-    user, repositories, languages, commits = collect()
-    date = dt.datetime.now(dt.timezone.utc).date().isoformat()
-    stats, lang = render(user, repositories, languages, commits, date)
+    repositories = collect()
     readme = replace_block((ROOT / 'README.md').read_text(), 'projects', project_block(repositories))
     if os.environ.get('SNAKE_PUBLISHED') == 'true':
         repository = os.environ['GITHUB_REPOSITORY']
@@ -136,10 +86,8 @@ def main():
         base = f'https://raw.githubusercontent.com/{repository}/output'
         readme = replace_block(readme, 'snake', f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="{base}/github-snake-dark.svg">\n  <source media="(prefers-color-scheme: light)" srcset="{base}/github-snake.svg">\n  <img src="{base}/github-snake.svg" width="100%" alt="Animated contribution snake for {USERNAME}">\n</picture>')
     # No writes until all API calls and block validation have succeeded.
-    (ROOT / 'assets/stats.svg').write_text(stats)
-    (ROOT / 'assets/languages.svg').write_text(lang)
     (ROOT / 'README.md').write_text(readme)
-    print(f'Updated verified public data for {USERNAME} on {date}.')
+    print(f'Updated verified project links for {USERNAME}.')
 
 
 if __name__ == '__main__':
