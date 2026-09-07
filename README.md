@@ -11,35 +11,10 @@
 </picture>
 <!-- snake:end -->
 
-### Tech stack
-
-<p>
-  <img src="assets/stack/javascript.svg" width="104" alt="JavaScript">
-  <img src="assets/stack/typescript.svg" width="104" alt="TypeScript">
-  <img src="assets/stack/react.svg" width="104" alt="React">
-  <img src="assets/stack/nextdotjs.svg" width="104" alt="Next.js">
-  <img src="assets/stack/nodedotjs.svg" width="104" alt="Node.js">
-  <img src="assets/stack/nestjs.svg" width="104" alt="NestJS">
-  <img src="assets/stack/graphql.svg" width="104" alt="GraphQL">
-  <img src="assets/stack/mongodb.svg" width="104" alt="MongoDB">
-  <img src="assets/stack/postgresql.svg" width="104" alt="PostgreSQL">
-  <img src="assets/stack/docker.svg" width="104" alt="Docker">
-  <img src="assets/stack/aws.svg" width="104" alt="AWS">
-  <img src="assets/stack/git.svg" width="104" alt="Git">
-  <img src="assets/stack/github.svg" width="104" alt="GitHub">
-</p>
-
-### Currently
-
-<p><img src="assets/active.svg" width="12" height="12" alt="Active"> &nbsp; Working on personal projects</p>
-
-<p><img src="assets/idle.svg" width="12" height="12" alt=""> &nbsp; Improving backend architecture</p>
-
-<p><img src="assets/idle.svg" width="12" height="12" alt=""> &nbsp; Building a space rental platform</p>
-
-<p><img src="assets/idle.svg" width="12" height="12" alt=""> &nbsp; Enhancing problem-solving skills</p>
-
-<p><img src="assets/idle.svg" width="12" height="12" alt=""> &nbsp; Becoming a better developer every day</p>
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/overview-mobile.svg">
+  <img src="assets/overview.svg" width="100%" alt="Tech Stack: JavaScript, TypeScript, React, Node.js, NestJS, GraphQL, MongoDB, PostgreSQL, Docker, AWS, Next.js, Git, GitHub. Currently: working on personal projects; improving backend architecture; building a space rental platform; enhancing problem-solving skills; becoming a better developer every day.">
+</picture>
 
 ### Featured projects
 

@@ -27,6 +27,6 @@ The GitHub link already uses `firdavsyangiev`.
 
 ## Rendering
 
-GitHub controls the surrounding page layout. The README uses Markdown, supported HTML, and self-contained SVG assets; it does not depend on CSS, JavaScript, or iframes. Technology tiles wrap and the hero has a mobile variant. Artwork remains dark in both themes; the snake switches palettes.
+GitHub controls the surrounding page layout. The README uses Markdown, supported HTML, and self-contained SVG assets; it does not depend on CSS, JavaScript, or iframes. Tech Stack and Currently share two border-lined dark panels on desktop, with a stacked mobile variant. Their artwork is in `assets/overview.svg` and `assets/overview-mobile.svg`; the hero also has a mobile variant. Artwork remains dark in both themes; the snake switches palettes.
 
 Brand paths are from [Simple Icons v16](https://github.com/simple-icons/simple-icons/tree/16.0.0), under [CC0](https://github.com/simple-icons/simple-icons/blob/16.0.0/LICENSE.md). AWS uses a typographic label.
