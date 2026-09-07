@@ -22,10 +22,6 @@
   <img src="assets/overview-light.svg" width="100%" alt="Tech Stack: JavaScript, TypeScript, React, Node.js, NestJS, GraphQL, MongoDB, PostgreSQL, Docker, AWS, Next.js, Git, GitHub, Python, AI / LLMs. Currently: working on personal projects; improving backend architecture; building a space rental platform; enhancing problem-solving skills; becoming a better developer every day.">
 </picture>
 
-### Connect
-
-[GitHub ↗](https://github.com/firdavsyangiev) &nbsp; / &nbsp; LinkedIn: www.linkedin.com/in/firdavsyangiev &nbsp; / &nbsp; Instagram: https://www.instagram.com/firdavs_yangiev/ &nbsp; / &nbsp; Email: firdavsyangiev@gmail.com &nbsp; / &nbsp; Portfolio: `PORTFOLIO_SOON)`
-
 ---
 
 <sub>Built with ☕ and a lot of late nights.<br>Stay curious. Keep building.</sub>
