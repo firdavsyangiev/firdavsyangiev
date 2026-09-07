@@ -24,7 +24,7 @@ def main():
         if repository.lower() != f'{USERNAME}/{USERNAME}'.lower():
             raise ValueError('Publish this package in the intended GitHub profile repository.')
         base = f'https://raw.githubusercontent.com/{repository}/output'
-        readme = replace_block(readme, 'snake', f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="{base}/github-snake-dark.svg">\n  <source media="(prefers-color-scheme: light)" srcset="{base}/github-snake.svg">\n  <img src="{base}/github-snake.svg" width="100%" alt="Animated contribution snake for {USERNAME}">\n</picture>')
+        readme = replace_block(readme, 'snake', f'<picture>\n  <source media="(prefers-color-scheme: dark)" srcset="{base}/github-contribution-grid-snake-dark.svg">\n  <source media="(prefers-color-scheme: light)" srcset="{base}/github-contribution-grid-snake.svg">\n  <img src="{base}/github-contribution-grid-snake.svg" width="100%" alt="Animated contribution snake for {USERNAME}">\n</picture>')
     # No writes until block validation has succeeded.
     (ROOT / 'README.md').write_text(readme)
     print(f'Updated contribution snake references for {USERNAME}.')
