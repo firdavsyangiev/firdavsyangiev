@@ -24,7 +24,7 @@
 
 ### Connect
 
-[GitHub ↗](https://github.com/firdavsyangiev) &nbsp; / &nbsp; LinkedIn: www.linkedin.com/in/firdavsyangiev &nbsp; / &nbsp; Instagram: `YOUR_INSTAGRAM_URL` &nbsp; / &nbsp; Email: `YOUR_EMAIL` &nbsp; / &nbsp; Portfolio: `YOUR_PORTFOLIO_URL`
+[GitHub ↗](https://github.com/firdavsyangiev) &nbsp; / &nbsp; LinkedIn: www.linkedin.com/in/firdavsyangiev &nbsp; / &nbsp; Instagram: https://www.instagram.com/firdavs_yangiev/ &nbsp; / &nbsp; Email: firdavsyangiev@gmail.com &nbsp; / &nbsp; Portfolio: `PORTFOLIO_SOON)`
 
 ---
 
