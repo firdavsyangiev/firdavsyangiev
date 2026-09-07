@@ -66,7 +66,7 @@ jobs:
           fi
           git worktree remove "$publish_dir"
 
-      - name: Refresh verified project links
+      - name: Update contribution snake references
         run: python3 scripts/update_profile.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

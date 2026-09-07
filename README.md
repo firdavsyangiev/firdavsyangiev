@@ -16,36 +16,6 @@
   <img src="assets/overview.svg" width="100%" alt="Tech Stack: JavaScript, TypeScript, React, Node.js, NestJS, GraphQL, MongoDB, PostgreSQL, Docker, AWS, Next.js, Git, GitHub. Currently: working on personal projects; improving backend architecture; building a space rental platform; enhancing problem-solving skills; becoming a better developer every day.">
 </picture>
 
-### Featured projects
-
-<!-- projects:start -->
-#### space-rental-platform
-
-Discover and rent unique spaces for any occasion.
-
-`Next.js` · `TypeScript` · `MongoDB`
-
-<sub>Repository link pending — no public repository with this name found.</sub>
-
-#### real-estate-platform
-
-A modern real estate platform with advanced search and filters.
-
-`React` · `Node.js` · `GraphQL`
-
-<sub>Repository link pending — no public repository with this name found.</sub>
-
-#### portfolio
-
-My personal developer portfolio.
-
-`Next.js` · `TypeScript` · `Tailwind CSS`
-
-<sub>Repository link pending — no public repository with this name found.</sub>
-<!-- projects:end -->
-
-[View all repositories →](https://github.com/firdavsyangiev?tab=repositories)
-
 ### Connect
 
 [GitHub ↗](https://github.com/firdavsyangiev) &nbsp; / &nbsp; LinkedIn: `YOUR_LINKEDIN_URL` &nbsp; / &nbsp; Instagram: `YOUR_INSTAGRAM_URL` &nbsp; / &nbsp; Email: `YOUR_EMAIL` &nbsp; / &nbsp; Portfolio: `YOUR_PORTFOLIO_URL`

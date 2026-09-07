@@ -1,6 +1,6 @@
 # Ray's GitHub profile
 
-Public profile repository: **firdavsyangiev/firdavsyangiev**. The profile uses a responsive monochrome header, contribution snake, technology tiles, current interests, featured projects, and social links.
+Public profile repository: **firdavsyangiev/firdavsyangiev**. The profile uses a responsive monochrome header, contribution snake, technology tiles, current interests, and social links.
 
 ## Automation
 
@@ -10,11 +10,9 @@ Enable GitHub Actions and allow `actions/checkout` and `Platane/snk`. The workfl
 
 Platane/snk generates both light and dark SVGs from the account's real contribution data and publishes them to `output`. The README selects the appropriate image using `<picture>`. GitHub scheduling and image caching can delay visible updates; inactive public repositories may have their schedules disabled after 60 days.
 
-`USERNAME` in `scripts/update_profile.py` is the shared account source. The Python updater checks public repository names and updates only the marked project and snake blocks. It does not generate statistics or language cards. API errors preserve the previous README.
+`USERNAME` in `scripts/update_profile.py` is the shared account source. The Python updater updates only the marked snake block. It does not generate project sections, statistics, or language cards.
 
-## Projects and social links
-
-Edit `PROJECTS` in the Python updater to change featured project names, descriptions, or technologies. A project without a matching public repository remains a clearly labeled placeholder; its link appears automatically when the repository exists.
+## Social links
 
 Replace the Connect placeholders in `README.md`, including their backticks, with Markdown links:
 
